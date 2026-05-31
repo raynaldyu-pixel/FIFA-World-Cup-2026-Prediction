@@ -50,7 +50,7 @@ Raw Data
    │
    ├─ Feature Engineering
    ├─ XGBoost Training  (multi:softprob, 3 classes)
-   ├─ Draw Threshold Optimisation  (tuned on WC 2022 matches only)
+   ├─ Draw Threshold Optimisation
    └─ WC 2026 Predictions
 ```
 
