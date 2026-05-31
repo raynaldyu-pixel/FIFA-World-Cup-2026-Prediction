@@ -1,3 +1,6 @@
+💻 **Note:** For the full code and reproducible environment, head over to the official notebook on [Kaggle](https://www.kaggle.com/code/raynaldyu/fifa-world-cup-2026-prediction).
+
+---
 # ⚽ FIFA World Cup 2026 — Match Outcome Prediction
 
 A machine learning pipeline that predicts the outcome (Home Win / Draw / Away Win) of every FIFA World Cup 2026 group stage match. Built around a custom team rating system, macroeconomic context features, official FIFA ranking data, and a heavily regularized XGBoost classifier tuned specifically on World Cup match patterns.
