@@ -179,6 +179,18 @@ This requires draw to have *both* reasonable absolute probability and a genuinel
 
 ---
 
+## 🏆 Tournament Simulation & xPts Tiebreaker
+
+Once the XGBoost engine predicts the World Cup Group Stage, the results are aggregated into a standard tournament bracket format. However, because the model predicts categorical Win/Draw/Loss rather than exact goal counts, standard FIFA tiebreakers (like Goal Difference) cannot be used.
+
+To solve this, **Expected Points (xPts)** is strictly calculated post-prediction and used exclusively as a mathematical tiebreaker for the 3rd-Place Wildcard teams. 
+
+* `xPts = (Win_Probability * 3) + (Draw_Probability * 1)`
+
+If multiple 3rd-place teams finish with exactly equal points, the team with the higher `xPts` advances to the Round of 32, ensuring the teams that played the statistically tightest, most competitive matches are rewarded with the wildcard spots.
+
+---
+
 ## 📁 Project Structure
 
 ```
